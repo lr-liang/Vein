@@ -1,0 +1,30 @@
+# Vein 导航系统配置文件
+
+# 布局设置
+layout:
+  default: "list"  # ios | list | grid
+
+# 主题设置
+theme:
+  default: "light"  # auto | light | dark
+
+# 搜索设置
+search:
+  enabled: true
+  placeholder: "搜索链接..."
+
+# 背景设置
+background:
+  enabled: true
+  #url: "https://img-s.msn.cn/tenant/amp/entityid/BB1msOOY?w=0&h=0&q=60&m=6&f=jpg&u=t"          # 网络图片URL
+  url: "https://img-s.msn.cn/tenant/amp/entityid/AA12sjd1?w=0&h=0&q=60&m=6&f=jpg&u=t"          # 网络图片URL
+  localPath: ""   # 本地图片（通过文件选择器）
+
+# 天气设置
+weather:
+  enabled: false
+  city: "深圳"
+
+# 其他设置
+other:
+  showCopyButton: true

@@ -1,0 +1,75 @@
+categories:
+  - name: "开发工具"
+    id: "dev"
+    groups:
+      - name: "代码托管"
+        links:
+          - title: "GitHub"
+            url: "https://github.com"
+            description: "全球最大的代码托管平台"
+          - title: "GitLab"
+            url: "https://gitlab.com"
+            description: "自托管的Git仓库管理平台"
+          - title: "Bitbucket"
+            url: "https://bitbucket.org"
+            description: "Atlassian的代码托管服务"
+
+      - name: "开发文档"
+        links:
+          - title: "MDN Web Docs"
+            url: "https://developer.mozilla.org"
+            description: "Web开发技术文档"
+          - title: "Vue.js"
+            url: "https://vuejs.org"
+            description: "渐进式JavaScript框架"
+          - title: "React"
+            url: "https://reactjs.org"
+            description: "用于构建用户界面的JavaScript库"
+
+  - name: "设计资源"
+    id: "design"
+    groups:
+      - name: "图标库"
+        links:
+          - title: "Lucide Icons"
+            url: "https://lucide.dev"
+            description: "美观的SVG图标库"
+          - title: "Feather Icons"
+            url: "https://feathericons.com"
+            description: "简单美观的图标"
+          - title: "Heroicons"
+            url: "https://heroicons.com"
+            description: "Tailwind CSS官方图标库"
+
+      - name: "配色工具"
+        links:
+          - title: "Coolors"
+            url: "https://coolors.co"
+            description: "配色方案生成器"
+          - title: "Adobe Color"
+            url: "https://color.adobe.com"
+            description: "Adobe官方配色工具"
+
+  - name: "学习资源"
+    id: "learning"
+    groups:
+      - name: "在线课程"
+        links:
+          - title: "Coursera"
+            url: "https://coursera.org"
+            description: "世界顶级大学在线课程"
+          - title: "edX"
+            url: "https://edx.org"
+            description: "高质量的在线教育平台"
+
+      - name: "技术博客"
+        links:
+          - title: "掘金"
+            url: "https://juejin.cn"
+            description: "中文技术社区"
+          - title: "Medium"
+            url: "https://medium.com"
+            description: "优质内容创作平台"
+          - title: "Dev.to"
+            url: "https://dev.to"
+            description: "开发者社区"

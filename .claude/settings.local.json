@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm create:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(pnpm dev:*)",
+      "Bash(pnpm install:*)",
+      "Bash(curl -s http://localhost:5174/menu.yaml)",
+      "Bash(curl -s http://localhost:5174/)",
+      "Bash(pnpm build:*)",
+      "Bash(grep -E \"\\\\.\\(vue|js|ts|json|yaml|yml\\)$\")",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(ls:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s -X GET \"http://localhost:3000\")",
+      "Bash(curl -s http://localhost:3000/menu.yaml)",
+      "Bash(findstr :3000)",
+      "Bash(pkill -f \"pnpm dev\")",
+      "Bash(taskkill /f /im node.exe)",
+      "Bash(start:*)"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "vein-nav",
+  "version": "1.0.0",
+  "description": "Vein 个人导航系统",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.ts --fix"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "js-yaml": "^4.1.0",
+    "@vueuse/core": "^10.7.0",
+    "lucide-vue-next": "^0.300.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0",
+    "tailwindcss": "^3.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0"
+  }
+}

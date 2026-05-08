@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* 隐藏所有元素的滚动条，但保留滚动功能 */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  *::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari and Opera */
+  }
+
+  /* 允许特定元素显示滚动条 */
+  .allow-scroll {
+    -ms-overflow-style: auto;  /* IE and Edge */
+    scrollbar-width: auto;     /* Firefox */
+  }
+
+  .allow-scroll::-webkit-scrollbar {
+    display: block;            /* Chrome, Safari and Opera */
+    width: 6px;
+    background: transparent;
+  }
+
+  .allow-scroll::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.5);
+    border-radius: 3px;
+  }
+
+  .allow-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.8);
+  }
+
+  /* 强制隐藏滚动条的辅助类 */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari and Opera */
+  }
+
+  /* 背景滤镜层 */
+  .background-filter {
+    filter: blur(0.1px) brightness(0.95) saturate(1);
+  }
+
+  /* 遮罩层 */
+  .background-mask {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+
+  * {
+    @apply transition-all duration-300;
+  }
+
+}
+
+@layer components {
+  /* 背景优化类 */
+  .background-overlay {
+    @apply absolute inset-0 bg-black/20 backdrop-blur-sm;
+  }
+
+  .background-blur-10 {
+    filter: blur(10px) brightness(0.8) saturate(0.9);
+  }
+
+  .background-blur-20 {
+    filter: blur(20px) brightness(0.75) saturate(0.85);
+  }
+
+  .background-blur-30 {
+    filter: blur(30px) brightness(0.7) saturate(0.8);
+  }
+
+  /* 优化后的毛玻璃卡片 */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass-sidebar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* 优化链接卡片 */
+  .link-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .link-card:hover {
+    background: rgba(255, 255, 255, 0.35);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  }
+
+  .link-card-grid {
+    @apply p-3 text-center hover:scale-105 hover:-translate-y-2;
+  }
+
+  .link-card-ios {
+    @apply bg-transparent border-none shadow-none text-center transition-all duration-300;
+    backdrop-filter: none;
+  }
+
+  .link-card-list {
+    @apply p-4 flex items-center space-x-4 hover:translate-x-2;
+  }
+
+  /* 增强的毛玻璃效果 */
+  .enhanced-glass {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  /* 深色主题优化 */
+  .dark .glass-card {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .dark .glass-sidebar {
+    background: rgba(0, 0, 0, 0.1);
+    border-right-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .dark .link-card {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .dark .link-card:hover {
+    background: rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
